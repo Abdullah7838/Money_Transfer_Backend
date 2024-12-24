@@ -9,6 +9,9 @@ app.use(express.json());
 const userRoute = require('./Routes/userRoute');
 app.use('/',userRoute);
 
+const transferRoute = require('./Routes/transferRoute');
+app.use('/',transferRoute);
+
 app.get('/', (req, res) => {
     res.send('Hello, world!');
   });
